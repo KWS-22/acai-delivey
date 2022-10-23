@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:  auto;
+    padding: 0 50px 0 50px;
+    background-color:#7c0b4b;  
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 15px;
+    color: #FFF;
+    display: block;
+    text-transform: uppercase;
+}
+nav .active,
+nav a:hover{
+    background-color: #e369ae;
+}
+.container .logo img{
+    width: 120px;
+    height: 80px;
+    padding-top: 20px;
+}
+.geral{
+    display: flex;
+}
+.geral .container{
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #7c0b4b;
+    padding: 60px 0 60px 0;
+}
+.geral .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+}
+.geral .bg-img{
+    flex: 2;
+}
+.content{
+    text-align: center;
+}
+.title h1{
+    font-size: 110px;
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+    text-shadow: 2px 4px #fff;
+    color: #f5c400;
+    text-transform: uppercase;
+}
+.title h2{
+    font-size: 67px;
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+    color: #FFF;
+    text-shadow: 1px 3px 5px #ccc;
+    text-transform: uppercase;
+}
+.box-text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #f5c400;
+
+}
+.geral .conteudo{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5c400; 
+    padding: 100px 0px 50px 0px;
+}
+.conteudo .bg-second{
+    display: flex;
+    flex-direction: column;
+}
+.conteudo .text{
+    font-size: 42px;
+    text-shadow: 1px 4px #FFF;
+    text-align: center;
+    color: #470ca0;
+    padding: 0 0 30px 70px;
+    text-transform: uppercase;
+}
+.geral .box-content{
+    width: 400px;
+    justify-content: center;
+    display: flex;
+    height: auto;
+    padding: 30px 0 30px 0px;
+    margin-top: 90px;
+    border-radius: 50px;
+    background-color: #381421;
+    font-size: 26px;
+    color: #FFF;
+    line-height: 40px;
+}
+.box-content .list{
+    display: flex;
+    flex-direction: column;
+}
+.box-content ul{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f5c400;
+    padding-bottom: 60px;
+}
+button{
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 42px;
+    padding: 15px;
+    border-radius: 80px;
+    border: 0;
+    color: #444;
+}
+button:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+
+}
+.whatsapp{
+    width: 100px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+}
+footer .contact{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0 10px 0;
+}
+footer address{
+    font-style: normal;
+    font-size: 21px;
+    color:#444;
+    text-align: center;
+}
+footer .media{
+    width: 40px;
+    margin-right: 10px;
+}
+footer .copy{
+    align-self: center;
+    font-size: 19px;
+    padding: 10px 0 15px 0;
+    color: #444 ;
+}
+
+.menu_mobile{
+    width: 40px;
+    height: 40px;
+    display:none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mn_line{
+    height: 2px;
+    background-color: 	#A9A9A9;
+}
+@media (min-width:360px) and (max-width:480px){
+    header{
+        height: auto;
+    }
+    header .container{
+        display: flex;
+        margin: 0;
+        padding: 0 10px 0 20px;
+    }
+    .container .logo img{
+        width: 70px;
+        height: auto;
+    }
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 40px;
+        position: absolute;
+        left: 0;
+        display: none;
+        background-color: #FFF;
+    }
+    nav ul li a {
+        color: #A9A9A9;
+    }
+    nav ul .active,
+    nav ul a:hover{
+        color: #A9A9A9;
+    }
+    .menu_mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .geral .container{
+        flex-direction: column;
+        border-bottom:1px solid #e369ae;
+    }
+    .title h1{
+        font-size: 52px;
+    }
+    .title h2{
+        font-size: 42px;
+    }
+    .geral .img-copo{
+        width: 300px;
+        padding-top: 25px;
+    }
+    .geral .conteudo{
+        flex-direction: column;
+    }
+    .conteudo .text{
+        font-size:20px;
+        justify-content: center;
+        padding: 0;
+        line-height: 40px;
+    }
+    .geral .bg-second{
+        width: 300px;
+    }
+    .conteudo .box-content{
+        width: 320px;
+        font-size: 19px;
+    }
+    button{
+        width: 300px;
+        font-size: 29px;
+    }
+    button .whatsapp{
+        width: 50px;
+    }
+    footer .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .social{
+        padding-bottom: 20px;
+    }
+    footer .copy{
+        text-align: center;
+        font-size: 19px;
+    }
+}
+@media (min-width:480px) and (max-width:680px){
+    header{
+        height: auto;
+    }
+    header .container{
+        display: flex;
+        margin: 0;
+        padding: 0 10px 0 20px;
+    }
+    .container .logo img{
+        width: 90px;
+        height: auto;
+    }
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 40px;
+        position: absolute;
+        left: 0;
+        display: none;
+        background-color: #FFF;
+    }
+    nav ul li a {
+        color: #A9A9A9;
+    }
+    nav ul .active,
+    nav ul a:hover{
+        color: #A9A9A9;
+    }
+    .menu_mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .geral .container{
+        flex-direction: column;
+        border-bottom:1px solid #e369ae;
+    }
+    .title h1{
+        font-size: 67px;
+    }
+    .title h2{
+        font-size: 57px;
+    }
+    .geral .img-copo{
+        width: 400px;
+        padding-top: 25px;
+    }
+    .geral .conteudo{
+        flex-direction: column;
+        padding-top: 60px;
+    }
+    .conteudo .text{
+        font-size: 25px;
+        justify-content: center;
+        padding-bottom: 30px;
+        padding-left: 0;
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .conteudo .subtitle{
+        padding-bottom: 30px;
+    }
+    .geral .bg-second{
+        width: 450px;
+    }
+    .conteudo .box-content{
+        width: 400px;
+        font-size: 22px;
+    }
+    button{
+        width: 300px;
+        font-size: 29px;
+    }
+    button .whatsapp{
+        width: 50px;
+    }
+    footer .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .social{
+        padding-bottom: 20px;
+    }
+    footer .copy{
+        text-align: center;
+        font-size: 19px;
+    }
+}
+@media (min-width:680px) and (max-width:980px){
+    header{
+        height: auto;
+    }
+    header .container{
+        display: flex;
+        margin: 0;
+        padding: 0 10px 0 20px;
+    }
+    .container .logo img{
+        width: 100px;
+        height: auto;
+    }
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 40px;
+        position: absolute;
+        left: 0;
+        display: none;
+        background-color: #FFF;
+    }
+    nav ul li a {
+        color: #A9A9A9;
+    }
+    nav ul .active,
+    nav ul a:hover{
+        color: #A9A9A9;
+    }
+    .menu_mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .geral .container{
+        flex-direction: column;
+        border-bottom:1px solid #e369ae;
+    }
+    .title h1{
+        font-size: 109px;
+    }
+    .title h2{
+        font-size: 68px;
+    }
+    .geral .img-copo{
+        width: 600px;
+        padding-top: 25px;
+    }
+    .geral .conteudo{
+        flex-direction: column;
+        padding-top: 60px;
+    }
+    .conteudo .text{
+        font-size: 32px;
+        justify-content: center;
+        padding-bottom: 30px;
+        padding-left: 0;
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .conteudo .subtitle{
+        padding-bottom: 30px;
+    }
+    .geral .bg-second{
+        width: 500px;
+    }
+    .conteudo .box-content{
+        width: 500px;
+        font-size: 32px;
+        line-height: 50px;
+    }
+    button{
+        width: 400px;
+        font-size: 32px;
+        padding-left: 70px;
+    }
+    button .whatsapp{
+        width: 50px;
+    }
+    footer .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .social{
+        padding-bottom: 20px;
+    }
+    footer .copy{
+        text-align: center;
+        font-size: 19px;
+    }
+    footer .media{
+        width: 60px;
+    }
+}
+@media (min-width:980px) and (max-width:1200px){
+    header{
+        height: auto;
+    }
+    header .container{
+        display: flex;
+        margin: 0;
+        padding: 0 10px 0 20px;
+    }
+    .container .logo img{
+        width: 100px;
+        height: auto;
+    }
+    .geral .container{
+        flex-direction: row;
+        border-bottom:1px solid #e369ae;
+    }
+    .title h1{
+        font-size: 78px;
+    }
+    .title h2{
+        font-size: 58px;
+    }
+    .geral .img-copo{
+        width: 400px;
+        padding-top: 25px;
+    }
+    .geral .conteudo{
+        flex-direction: row;
+        padding-top: 60px;
+    }
+    .conteudo .text{
+        font-size: 32px;
+        justify-content: center;
+        padding-bottom: 30px;
+        padding-left: 0;
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .conteudo .subtitle{
+        padding-bottom: 30px;
+    }
+    .geral .bg-second{
+        width: 500px;
+    }
+    .conteudo .box-content{
+        width: 300px;
+        font-size: 22px;
+        line-height: 50px;
+    }
+    button{
+        width: 400px;
+        font-size: 32px;
+        padding-left: 70px;
+    }
+    button .whatsapp{
+        width: 50px;
+    }
+    footer .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .social{
+        padding-bottom: 20px;
+    }
+    footer .copy{
+        text-align: center;
+        font-size: 19px;
+    }
+    footer .media{
+        width: 60px;
+    }
+}
